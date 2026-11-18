@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: "Cairo", system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-feature-settings: "tnum";
+  }
+
+  .font-math {
+    font-family: "IBM Plex Mono", "Times New Roman", serif;
+    direction: ltr;
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .math-ltr {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+  }
+}
+
+/* Custom hairline grid texture for geometric drafting stage */
+.drafting-grid {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Subtle range input styling */
+input[type="range"] {
+  accent-color: #0284c7;
+}
